@@ -1,18 +1,6 @@
-# algorithm
-算法学习笔记
+package com.xjj.easy;
 
-
-
-
-
-
-# leetcode
-### easy
-
-[13. 罗马数字转整数](https://leetcode-cn.com/problems/roman-to-integer/)
-
-```java
-class Solution {
+public class RomanToInt_13 {
     public int romanToInt(String s) {
         s = s.replace("IV","a");
         s = s.replace("IX","b");
@@ -20,7 +8,7 @@ class Solution {
         s = s.replace("XC","d");
         s = s.replace("CD","e");
         s = s.replace("CM","f");
-        
+
         int result = 0;
         for (int i=0; i<s.length(); i++) {
             result += which(s.charAt(i));
@@ -47,8 +35,3 @@ class Solution {
         return 0;
     }
 }
-
-```
-
-
-
