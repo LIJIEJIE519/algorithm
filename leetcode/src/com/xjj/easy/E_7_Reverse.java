@@ -1,6 +1,6 @@
 package com.xjj.easy;
 
-public class Reverse {
+public class E_7_Reverse {
     /*
     * 1. 数字反转，123-->321
     * 2. 防止溢出

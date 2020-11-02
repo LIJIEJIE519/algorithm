@@ -1,6 +1,6 @@
 package com.xjj.easy;
 
-public class RomanToInt_13 {
+public class E_13_RomanToInt {
     public int romanToInt(String s) {
         s = s.replace("IV","a");
         s = s.replace("IX","b");

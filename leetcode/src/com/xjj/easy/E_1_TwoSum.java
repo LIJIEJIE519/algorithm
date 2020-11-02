@@ -3,7 +3,7 @@ package com.xjj.easy;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TwoSum {
+public class E_1_TwoSum {
 
     /*
      * 1. 使用hashmap:查找元素为O(1)

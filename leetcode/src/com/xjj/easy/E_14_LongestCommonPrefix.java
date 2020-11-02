@@ -1,6 +1,6 @@
 package com.xjj.easy;
 
-public class LongestCommonPrefix_14 {
+public class E_14_LongestCommonPrefix {
     /*两两词比较，公共词在与后面词继续比较*/
     public String longestCommonPrefix(String[] strs) {
         if(strs.length == 0)
