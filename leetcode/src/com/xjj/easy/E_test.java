@@ -1,13 +1,14 @@
 package com.xjj.easy;
 
+import java.util.*;
+
 public class E_test {
 
-
-
     public static void main(String[] args) {
-        String a = "abc";
-        String b = "123abc2131";
-        System.out.println(b.indexOf("qwe"));
-        Math.sqrt(1);
+        String[] strings = {"ac","c"};
+        Arrays.sort(strings, Comparator.comparingInt(String::length));
+        System.out.println(strings[0]);
+
+        Map<String, List<String>> map = new HashMap<String, List<String>>();
     }
 }

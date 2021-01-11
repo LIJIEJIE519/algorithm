@@ -5,21 +5,25 @@ import java.util.*;
 public class E_20_isValid_Stack {
 
     public boolean isValid(String s) {
-        // 括号匹配
+        // 括号匹配【右键左值】
         Map<Character, Character> map = new HashMap<>();
         map.put(')', '(');
         map.put(']', '[');
         map.put('}', '{');
 
+        // 栈，左括号入栈，右括号出栈
         Deque<Object> stack = new LinkedList<>();
         for(int i = 0; i < s.length(); i++) {
+            // 右括号做匹配，出栈
             if (map.containsKey(s.charAt(i))) {
+                //
                 if (stack.isEmpty() || stack.peek() != map.get(s.charAt(i))) {
                     return false;
                 }
                 // 出栈
                 stack.pop();
             }else {
+                // 左括号
                 stack.push(s.charAt(i));
             }
         }

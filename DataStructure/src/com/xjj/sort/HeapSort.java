@@ -22,6 +22,7 @@ public class HeapSort {
         int temp = arr[parentIndex];
         int childIndex = parentIndex*2+1;
         while (childIndex < size) {
+            // 找子孩子中最大
             if (arr[childIndex] < arr[childIndex+1]) {
                 childIndex++;
             }
@@ -38,7 +39,7 @@ public class HeapSort {
 
     // 堆排序
     public static void heapSort(int[] arr) {
-        // 从最后一个非叶子节点开始，依次做“下沉”调整
+        // 1. 从最后一个非叶子节点开始，依次做“下沉”调整
         for(int i = (arr.length - 2)/2; i >= 0; i--) {
             downAdjust(arr, i, arr.length-1);
         }

@@ -11,13 +11,17 @@ public class E_38_countAndSay {
         // String res = "";
         int num = 1;
         for (int i = 1; i < str.length(); i++) {
+            // 相加同字符
             if (str.charAt(i-1) == str.charAt(i)) {
                 num += 1;
             } else {
+                // 否则，num个i-1
                 // res += num+""+str.charAt(i-1);
                 s.append(num).append(str.charAt(i-1));
+                // 个数归1
                 num = 1;
             }
+            // 刚好遍历到最好一个字符
             if (i == str.length()-1) {
                 // res += num+""+str.charAt(i);
                 s.append(num).append(str.charAt(i));

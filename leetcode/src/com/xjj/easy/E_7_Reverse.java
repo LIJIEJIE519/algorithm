@@ -21,6 +21,7 @@ public class E_7_Reverse {
             if (temp != ans/10)
                 return 0;
             temp = ans;
+            // /降位
             x = x / 10;
         }
         return ans;
